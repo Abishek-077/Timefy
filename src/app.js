@@ -76,10 +76,10 @@ function App(props) {
     let [shortbrktime, setShortbrktime] = useState(workState.shortbrktime);
     let [longbrktime, setLongbrktime] = useState(workState.longbrktime);
     let [rounds, setRounds] = useState(workState.rounds);
-    let [stateswitch, setStateswitch] = useState(false)
-    let [tabseconds, setTabseconds] = useState(0)
-    let [issignedin, setIssignedin] = useState(false)
-    let [starttime, setStarttime] = useState(undefined)
+    let [stateswitch, setStateswitch] = useState(false);
+    let [tabseconds, setTabseconds] = useState(0);
+    let [issignedin, setIssignedin] = useState(false);
+    let [starttime, setStarttime] = useState(undefined);
 
 
 
@@ -98,12 +98,12 @@ function App(props) {
         {
             href: '/',
             icon: (<BsGearFill fontSize="large" />),
-            title: 'Pomodo'
+            title: 'Timefy'
         },
         {
-            href: '/state',
+            href: '/Report',
             icon: (<BsBarChartLine fontSize="large" />),
-            title: 'State'
+            title: 'Report'
         },
         {
             href: '/settings',
@@ -155,7 +155,7 @@ function App(props) {
                         <Toolbar sx={{ justifyContent: "space-between" }} >
 
                             <Typography variant="h6" noWrap component="div" sx={{ color: "black" }}>
-                                POMO.DO
+                                Timefy
                             </Typography>
                             <Box sx={{ display: { xs: 'block', sm: 'none' } }}>
                                 {items.map((item) => (
@@ -229,13 +229,13 @@ function App(props) {
 <Divider sx={{borderColor:'black', opacity:0.4}}/>
                         <Grid maxWidth={"750px"} margin="auto" container flexDirection={'column'} paddingBottom={'20px'}>
                                     <br />
-                                    <Typography component={'h1'} variant="h3"  > Best Pomodoro Timer for ADHD Students to Boost Study Retention
+                                    <Typography component={'h1'} variant="h3"  > Best Pomodoro Timer for Students to Boost Study Retention
                                     </Typography>
                                     <br />
-                                    <Typography component={'h2'} variant="h4"> What is Pomo.do Pomodoro Tracker?
+                                    <Typography component={'h2'} variant="h4"> What is Timefy Pomodoro Tracker?
                                     </Typography>
                                     <br />
-                                    <Typography > Pomo.do is a unique Pomodoro timer app that helps students with ADHD to focus on their tasks. It works both on desktop and mobile browsers.
+                                    <Typography > Timefy is a unique Pomodoro timer app that helps students with ADHD to focus on their tasks. It works both on desktop and mobile browsers.
                                     </Typography>
                                     <br />
                                     <Typography component={'h2'} variant="h4"> Use Cases
@@ -246,11 +246,11 @@ function App(props) {
 
                                     <ul>
                                         <li>
-                                            <Typography > Some use the pomo.do apps to get themselves to focus on their studies. And once they are in the zone, they keep working until their focus breaks.
+                                            <Typography > Some use the Timefy apps to get themselves to focus on their studies. And once they are in the zone, they keep working until their focus breaks.
                                             </Typography>
                                         </li>
                                         <li>
-                                            <Typography > Some users use Pomo.do to get themselves to take breaks from playing video games or scrolling on social media.
+                                            <Typography > Some users use Timefy to get themselves to take breaks from playing video games or scrolling on social media.
                                             </Typography>
                                         </li>
                                         <li>
@@ -266,7 +266,7 @@ function App(props) {
                                     <Typography fontStyle={'italic'}>The use cases of the Pomodoro technique for ADHD students are only limited by your creativity.
                                     </Typography>
                                     <br />
-                                    <Typography component={'h2'} variant="h4">How to Use Pomo.do Timer?
+                                    <Typography component={'h2'} variant="h4">How to Use Timefy Timer?
                                     </Typography>
 
                                     <ul>
@@ -337,11 +337,11 @@ function App(props) {
                                     </Typography>
                                     <br />
                                     <TwitterTweetEmbed
-                                        tweetId={'1588214675208081409'}
+                                        // tweetId={'1588214675208081409'}
                                     />
                                     <br />
                                     <TwitterTweetEmbed
-                                        tweetId={'1532038305709035520'}
+                                        // tweetId={'1532038305709035520'}
                                     />
                                     <br />
                                     <Typography component={'h3'} variant="h5"> How many Pomodoros should you do in a day?

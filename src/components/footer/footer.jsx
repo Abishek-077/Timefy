@@ -15,27 +15,23 @@ export const Footer = () => {
         Made with by Abishek Ghimire
       </Text>
       {/* <a href="https://www.producthunt.com/products/pomo-do?utm_source=badge-top-post-topic-badge&utm_medium=badge&utm_souce=badge-pomo&#0045;do" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-topic-badge.svg?post_id=358297&theme=light&period=weekly&topic=Productivity" alt="Pomo&#0046;DO - Plan&#0032;better&#0044;&#0032;work&#0032;better | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a> */}
-      <CoffeeLink
-        href="https://www.producthunt.com/products/pomo-do?utm_source=badge-top-post-topic-badge&utm_medium=badge&utm_souce=badge-pomo&#0045;do"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <CoffeeLink>
         <CoffeeImage 
         src="https://api.producthunt.com/widgets/embed-image/v1/top-post-topic-badge.svg?post_id=358297&theme=light&period=weekly&topic=Productivity"
-         alt="Pomo&#0046;DO - Plan&#0032;better&#0044;&#0032;work&#0032;better | Product Hunt"
-          />
+         alt="Pomo&#0046;DO - Plan&#0032;better&#0044;&#0032;work&#0032;better |  Abishek Ghimire"
+          />Product
       </CoffeeLink>
 
       <Box display="flex" justifyContent="space-between" width={60} m="auto">
         <a
-          href="https://twitter.com/arnabghosh_co"
+          href=""
           target="_blank"
           rel="noopener noreferrer"
         >
           <TwitterIcon color='primary' />
         </a>
         <a
-          href="https://github.com/ghosharnab00/Pomo.do"
+          href="https://x.com/home?lang=en"
           target="_blank"
           rel="noopener noreferrer"
         >
