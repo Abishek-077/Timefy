@@ -1,0 +1,15 @@
+:root {
+    --black: rgb(0, 0, 0);
+    --liteblack:#474745;
+    --grey: #4e504d;
+    --litegrey: #889293;
+    --litergrey: #B7C1C3;
+    --litestgrey: #CCD6D8;
+    --offwhite: #E3E8EB;
+    --white: #ffff;
+    --orange: #f16a2b73;
+    --litegreen: #d0dcb4;
+    --brown: #441014;
+    --red: rgba(255, 0, 0, 0.574);
+
+}

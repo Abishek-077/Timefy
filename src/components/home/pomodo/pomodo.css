@@ -1,0 +1,33 @@
+
+.timer{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 250px;
+    margin:0 auto;
+    text-align: center;
+    flex-direction: column;
+}
+
+button{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.icon{
+    color: blue;
+    background-color: wheat;
+    width: 40px;
+    height: 40px;
+}
+
+.btnwrap{
+    display: flex;
+    justify-content: space-evenly;
+}
+.roundname{
+    padding-top:25px;
+    color:var(--orange)
+}
