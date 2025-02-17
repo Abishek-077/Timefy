@@ -12,7 +12,7 @@ export const Footer = () => {
   return (
     <Container width>
       <Text align="center">
-        Made with <Heart color="primary" /> by Arnab Ghosh
+        Made with by Abishek Ghimire
       </Text>
       {/* <a href="https://www.producthunt.com/products/pomo-do?utm_source=badge-top-post-topic-badge&utm_medium=badge&utm_souce=badge-pomo&#0045;do" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-topic-badge.svg?post_id=358297&theme=light&period=weekly&topic=Productivity" alt="Pomo&#0046;DO - Plan&#0032;better&#0044;&#0032;work&#0032;better | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a> */}
       <CoffeeLink
