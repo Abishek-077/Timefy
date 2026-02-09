@@ -1,33 +1,47 @@
 
-.timer{
-    display: block;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 250px;
-    margin:0 auto;
-    text-align: center;
-    flex-direction: column;
-}
-
-button{
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-}
-
-.icon{
-    color: blue;
-    background-color: wheat;
-    width: 40px;
-    height: 40px;
-}
-
-.btnwrap{
+.timer {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    width: 100%;
+    text-align: center;
 }
-.roundname{
-    padding-top:25px;
-    color:var(--orange)
+
+.timer .MuiCircularProgress-root {
+    color: var(--primary);
+}
+
+.timer .MuiButton-root {
+    text-transform: none;
+    border-radius: 999px;
+    padding: 8px 18px;
+    font-weight: 600;
+    box-shadow: none;
+}
+
+.timer .MuiButton-contained {
+    background: var(--primary);
+}
+
+.timer .MuiButton-contained:hover {
+    background: var(--primary-dark);
+}
+
+.timer .MuiButton-outlined {
+    border-color: var(--border);
+    color: var(--text);
+    background: var(--surface);
+}
+
+.btnwrap {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.roundname {
+    padding-top: 25px;
+    color: var(--orange);
 }

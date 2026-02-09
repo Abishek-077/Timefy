@@ -12,7 +12,7 @@ import SettingContext from './components/settings/settingcontext';
 import Pomodoro from "./components/home/pomodo/pomodo";
 import Stopwatch from "./components/home/stopwatch/stopwatch";
 import { Tabtiles } from "./components/GeneralFunctions"
-import { Grid, Container, Card } from "@mui/material";
+import { Grid } from "@mui/material";
 import { request } from './data/axiosConfig';
 import {
     Routes,
@@ -20,7 +20,6 @@ import {
     NavLink,
     BrowserRouter
 } from "react-router-dom";
-import { MemoryRouter } from 'react-router-dom';
 import { BsGearFill, BsBarChartLine, BsClock } from 'react-icons/bs'
 import Home from './components/home/home';
 import States from "./components/state/state";
@@ -43,18 +42,18 @@ const light = {
         mode: "light",
     
     primary:{
-        main:'#0000FF',
-        light200:"#b39ddb",
-        light800:"#4527a0",
-        dark:'#5e35b1',
-        darker: "#008b00",
-        darkest:"#007300",
+        main:'#3d67ff',
+        light200:"#e8edff",
+        light800:"#2f4fd1",
+        dark:'#2f4fd1',
+        darker: "#1f3fb5",
+        darkest:"#182f87",
         contrastText:'#fff',
         heading:'#f46524',
         subheader:"#4a5e72",
         darksub:'#334960',
         litesub:"#aeb7bf",
-        lightback:'#ebedef'
+        lightback:'#f4f6fb'
       }
     }
 };
@@ -139,7 +138,7 @@ function App(props) {
         }}>
 
             <BrowserRouter>
-                <Box sx={{ display: 'flex' }}>
+                <Box sx={{ display: 'flex' }} className="app-shell">
                     <GetUser />
                     <CssBaseline />
                     <AppBar
@@ -154,7 +153,7 @@ function App(props) {
                     >
                         <Toolbar sx={{ justifyContent: "space-between" }} >
 
-                            <Typography variant="h6" noWrap component="div" sx={{ color: "black" }}>
+                            <Typography variant="h6" noWrap component="div" sx={{ color: "var(--text)" }}>
                                 Timefy
                             </Typography>
                             <Box sx={{ display: { xs: 'block', sm: 'none' } }}>
@@ -162,7 +161,7 @@ function App(props) {
 
                                     <NavLink to={item.href} key={Math.random()} style={stateswitch ? { textDecoration: "none", pointerEvents: "none" } : { textDecoration: "none" }}>
                                         <Button key={Math.random()} sx={stateswitch ?
-                                            { color: "var(--offwhite)" } : { color: "black" }}>{item.title}</Button>
+                                            { color: "var(--offwhite)" } : { color: "var(--text)" }}>{item.title}</Button>
                                     </NavLink>
                                 ))}
                             </Box>
@@ -184,7 +183,12 @@ function App(props) {
                             }}
                             sx={{
                                 display: { xs: 'block', sm: 'none' },
-                                '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+                                '& .MuiDrawer-paper': {
+                                    boxSizing: 'border-box',
+                                    width: drawerWidth,
+                                    backgroundColor: "var(--surface)",
+                                    borderRight: "1px solid var(--border)"
+                                },
                             }}
                         >
                             <SidebarDrawer />
@@ -194,7 +198,13 @@ function App(props) {
                             sx={{
                                 display: { xs: 'none', sm: 'block' },
 
-                                '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth, justifyContent: "center", },
+                                '& .MuiDrawer-paper': {
+                                    boxSizing: 'border-box',
+                                    width: drawerWidth,
+                                    justifyContent: "center",
+                                    backgroundColor: "var(--surface)",
+                                    borderRight: "1px solid var(--border)"
+                                },
                             }}
                             open
                         >
@@ -204,6 +214,7 @@ function App(props) {
                     </Box>
                     <Box
                         component="main"
+                        className="app-main"
                         sx={{ flexGrow: 1, p: 0, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
                     >
 
@@ -226,8 +237,8 @@ function App(props) {
                         <Grid item flex={true} justifyContent="center">
                             <Footer />
                         </Grid>
-<Divider sx={{borderColor:'black', opacity:0.4}}/>
-                        <Grid maxWidth={"750px"} margin="auto" container flexDirection={'column'} paddingBottom={'20px'}>
+<Divider sx={{borderColor:'var(--border)', opacity:1}}/>
+                        <Grid maxWidth={"750px"} margin="auto" container flexDirection={'column'} paddingBottom={'20px'} className="marketing-section">
                                     <br />
                                     <Typography component={'h1'} variant="h3"  > Best Pomodoro Timer for Students to Boost Study Retention
                                     </Typography>
