@@ -8,18 +8,32 @@
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   align-items: center;
   margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-hero::after {
+  content: "";
+  position: absolute;
+  inset: -40% 55% auto -10%;
+  height: 140%;
+  background: radial-gradient(circle, rgba(109, 124, 255, 0.22), transparent 60%);
+  opacity: 0.8;
+  pointer-events: none;
 }
 
 .hero-copy h1 {
   margin: 12px 0;
   font-size: clamp(2rem, 4vw, 3.2rem);
   color: var(--text);
+  letter-spacing: -0.02em;
 }
 
 .hero-copy p {
   margin: 0;
   line-height: 1.6;
   color: var(--text-muted);
+  max-width: 520px;
 }
 
 .hero-eyebrow {
@@ -27,7 +41,7 @@
   letter-spacing: 0.2em;
   font-size: 0.75rem;
   font-weight: 600;
-  color: var(--primary);
+  color: var(--primary-dark);
 }
 
 .hero-actions {
@@ -40,10 +54,11 @@
 .hero-pill {
   padding: 8px 14px;
   border-radius: 999px;
-  background: var(--primary-soft);
-  color: var(--primary);
+  background: linear-gradient(120deg, rgba(109, 124, 255, 0.18), rgba(248, 114, 192, 0.18));
+  color: var(--primary-dark);
   font-weight: 600;
   font-size: 0.85rem;
+  border: 1px solid rgba(109, 124, 255, 0.25);
 }
 
 .hero-stats {
@@ -52,10 +67,11 @@
 }
 
 .stat-card {
-  background: var(--surface-muted);
+  background: linear-gradient(150deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.6));
   border-radius: 20px;
   padding: 20px;
   border: 1px solid var(--border);
+  box-shadow: 0 16px 40px rgba(109, 124, 255, 0.12);
 }
 
 .stat-card span {
@@ -69,7 +85,7 @@
   display: block;
   font-size: 1.6rem;
   margin-top: 6px;
-  color: var(--text);
+  color: var(--primary-dark);
 }
 
 .stat-card p {
@@ -122,10 +138,10 @@
   grid-template-columns: 48px 1fr;
   gap: 12px;
   align-items: center;
-  background: var(--surface-muted);
+  background: linear-gradient(135deg, rgba(109, 124, 255, 0.1), rgba(255, 255, 255, 0.8));
   padding: 12px 14px;
   border-radius: 16px;
-  border: 1px solid var(--border);
+  border: 1px solid rgba(109, 124, 255, 0.18);
 }
 
 .sound-card p {
@@ -139,13 +155,13 @@
   border-radius: 12px;
   display: grid;
   place-items: center;
-  background: var(--primary-soft);
+  background: rgba(109, 124, 255, 0.18);
 }
 
 .imgSizing {
   width: 22px;
   height: 22px;
-  filter: invert(27%) sepia(92%) saturate(2857%) hue-rotate(223deg) brightness(95%) contrast(102%);
+  filter: invert(27%) sepia(94%) saturate(1766%) hue-rotate(224deg) brightness(96%) contrast(104%);
 }
 
 .soundDial {
