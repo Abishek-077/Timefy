@@ -56,15 +56,16 @@ export default function Home() {
         <section className="home-hero content-surface">
           <div className="hero-copy">
             <span className="hero-eyebrow">Timefy Focus Studio</span>
-            <h1>Design your best focus rituals.</h1>
+            <h1>The sexiest, most productive focus ritual ever.</h1>
             <p>
               A calm, modern workspace for Pomodoro sessions, task planning, and
-              focus-friendly sounds. Stay on track, one mindful sprint at a time.
+              focus-friendly soundscapes. Stay on track, one polished sprint at a time.
             </p>
             <div className="hero-actions">
               <div className="hero-pill">Pomodoro-ready</div>
               <div className="hero-pill">Soundscapes</div>
               <div className="hero-pill">Task clarity</div>
+              <div className="hero-pill">Glassy focus UI</div>
             </div>
           </div>
           <div className="hero-stats">
