@@ -1,136 +1,123 @@
-  form {
-    min-height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
-  form input,
-  form button {
-    padding: 10px;
-    font-size: 18px;
-    border: none;
-    background: white;
-    
-  }
-  form input{
-      border-top-left-radius:25px ;
-      border-bottom-left-radius:25px ;
-      width: 70%;
-  }
-  form button{
-    border-top-right-radius:25px ;
-    border-bottom-right-radius:25px ;
-  }
+form {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
 
-  form button {
-    color: var(--color2);
-    background: var(--color1);
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  form button:hover {
-    background:var(--color2);
-    color: var(--color1);
-  }
-  .todo-container {
-    display: block;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .todo-list {
-      display: flex;
-      padding: 0;
-      
-    min-width: 30%;
-    list-style: none;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .todo {
-    margin: 10px 0px;
-    width: 80%;
-    font-size: 18px;
-    border-radius: 25px;
-    background: white;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 1s ease;
-  }
-  .filter-todo {
-    padding: 1rem;
-  }
-  .todo li {
-    flex: 1;
-  }
-  
-  .trash-btn{
-    border-top-right-radius:25px ;
-    border-bottom-right-radius:25px ;
-  }
-  .todo-item {
-    padding: 0rem 0.5rem;
-  }
-  
-  .fa-trash,
-  .fa-check {
-    pointer-events: none;
-  }
-  
-  .fall {
-    transform: translateY(10rem) rotateZ(20deg);
-    opacity: 0;
-  }
-  
-  .completed {
-    text-decoration: line-through;
-    opacity: 0.5;
-  }
-  
-  /*CUSTOM SELECTOR */
-  select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    appearance: none;
-    outline: 0;
-    box-shadow: none;
-    border: 0 !important;
-    background-image: none;
-  }
-  
-  /* Custom Select */
-  .select {
-    margin: 1rem;
-    position: relative;
-    overflow: hidden;
-  }
-  select {
-    color: #ff6f47;
-    font-family: "Poppins", sans-serif;
-    cursor: pointer;
-    width: 12rem;
-  }
-  /* Arrow */
-  .select::after {
-    content: "\25BC";
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 1rem;
-    background: #ff6f47;
-    cursor: pointer;
-    pointer-events: none;
-  }
-  /* Transition */
-  /*
-  .select:hover::after {
-    transform: scale(1.5);
-  }
-  */
+form input,
+form button {
+  padding: 12px 16px;
+  font-size: 16px;
+  border: none;
+  background: var(--surface);
+}
+
+form input {
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  width: 70%;
+  border: 1px solid var(--border);
+  border-right: none;
+}
+
+form button {
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  background: var(--primary);
+  color: var(--white);
+  cursor: pointer;
+  font-weight: 600;
+  border: 1px solid var(--primary);
+}
+
+.todo-container {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  display: flex;
+  padding: 0;
+  min-width: 30%;
+  list-style: none;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.todo {
+  width: 100%;
+  font-size: 16px;
+  border-radius: 18px;
+  background: var(--surface-muted);
+  color: var(--text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border: 1px solid var(--border);
+  transition: all 0.2s ease;
+}
+
+.todo li {
+  flex: 1;
+}
+
+.todo-item {
+  padding: 0;
+}
+
+.trash-btn {
+  border-radius: 12px;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
+}
+
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+select {
+  color: var(--primary);
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+  width: 12rem;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  background: var(--primary);
+  cursor: pointer;
+  pointer-events: none;
+  color: var(--white);
+}
   
